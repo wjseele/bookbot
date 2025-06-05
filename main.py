@@ -17,7 +17,7 @@ def main():
     print("============ BOOKBOT ============")
     print(f"Analyzing book found at {book_to_read}")
     print("----------- Word Count ----------")
-    print(f"{num_words} words found in the document")
+    print(f"{num_words} total words")
     print("--------- Character Count -------")
 
     for letters in range(0, len(sorted_list)):
