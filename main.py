@@ -13,8 +13,19 @@ def main():
     num_words = get_num_words(book_text)
     char_count = get_num_chars(book_text)
     sorted_list = sort_list(char_count)
+
     print("============ BOOKBOT ============")
     print(f"Analyzing book found at {book_to_read}")
+    print("----------- Word Count ----------")
     print(f"{num_words} words found in the document")
+    print("--------- Character Count -------")
+
+    for letters in range(0, len(sorted_list)):
+        char = sorted_list[letters]["char"]
+        num = sorted_list[letters]["num"]
+        if char.isalpha():
+            print(f"{char}: {num}")
+
+    print("============= END ===============")
 
 main()

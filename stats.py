@@ -12,6 +12,9 @@ def get_num_chars(book_text):
             char_count[char] = 1
     return char_count
 
+def sort_on(dict):
+    return dict["num"]
+
 def sort_list(char_count):
     sorted_char_count = []
 
@@ -19,6 +22,6 @@ def sort_list(char_count):
         sorted_char_count.append(
             {"char": char, "num": char_count[char]}
         )
-    print(sorted_char_count)                   
-    # sorted_char_count.sort(reverse=True, key="num")
+
+    sorted_char_count.sort(reverse=True, key=sort_on)
     return sorted_char_count
