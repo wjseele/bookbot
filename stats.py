@@ -5,7 +5,7 @@ def get_num_words(book_text):
 def get_num_chars(book_text):
     lower_book_text = book_text.lower()
     char_count = {}
-    for char in range(0, len(lower_book_text)):
+    for char in lower_book_text:
         if char in char_count:
             char_count[char] += 1
         else:

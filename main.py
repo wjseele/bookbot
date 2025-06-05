@@ -1,4 +1,5 @@
-from stats import get_num_words
+# from stats import get_num_words
+from stats import get_num_chars
 
 def get_book_text(file_path):
     with open(file_path) as file:
